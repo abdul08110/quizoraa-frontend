@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Page Background */
+.registration-container {
+  background-color: #eef2ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+}
+
+/* Registration Card */
+.registration-box {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  max-width: 650px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Text */
+.registration-header h2 {
+  color: #4b3cc2;
+  font-size: 26px;
+  margin: 0;
+}
+
+.registration-header p {
+  color: #444;
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+/* Info Strip (if used) */
+.info-strip {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  background: #f0f4ff;
+  border-radius: 12px;
+  padding: 16px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.info-strip span {
+  color: #888;
+  font-size: 14px;
+  display: block;
+}
+
+.info-strip strong {
+  font-size: 18px;
+  color: #4b3cc2;
+  font-weight: 700;
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > *:not(.checkbox-box):not(.register-button):not(.login-link) {
+  margin-bottom: 1.2rem;
+}
+
+/* Two Column Fields */
+.form-grid-2 {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.form-grid-2 > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Three Column Fields */
+.form-grid-3 {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.form-grid-3 > div {
+  flex: 1 1 30%;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label & Inputs */
+label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+}
+
+/* Checkbox Section */
+.checkbox-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+
+.checkbox-box input[type="checkbox"] {
+  margin-right: 0px; /* Reduce space between checkbox and label */
+}
+
+
+
+
+.checkbox-box a {
+  color: #4b3cc2;
+  text-decoration: none;
+}
+
+.checkbox-box a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.register-button {
+  background: #4b3cc2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.register-button:hover {
+  background: #3829a5;
+}
+
+/* Login Link */
+.login-link {
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #4b3cc2;
+  text-decoration: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .form-grid-2,
+  .form-grid-3 {
+    flex-direction: column;
+  }
+
+  .registration-box {
+    padding: 24px;
+  }
+
+  .registration-container {
+    padding: 24px 12px;
+  }
+}

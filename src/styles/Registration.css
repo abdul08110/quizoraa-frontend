@@ -1,0 +1,8 @@
+.registration-page {
+  background-color: #f0f4ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+}
